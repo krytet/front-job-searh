@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job search</title>
+        <meta>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id="top" class="top">
+                <div>
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <input type="text" name="search" id="input_search" placeholder="Find your best job">
+                <div id="menu" class="menu">
+                    <a href="#">Find a job</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Community</a>
+                </div>
+                <button>Post a job</button>
+            </div>
+            <div id="logo" class="logo">
+                <div id="slogan" class="slogan">
+                    <h1>Top jobs board for professionals</h1>
+                    <h5>Discover your next career move with over 15 000 opening 
+                        vacancies, customer support, sowtware, design anywhere in 
+                        the world or remotely.
+                    </h5>
+                </div>
+                
+            </div>
+
+        </header>
+        <div id="content" class="content">
+            <div id="left_sidebar" class="left_sidebar">
+                <h5>Фильтр</h5>
+                <h5>Образование</h5>
+                <label class="radio_select">
+                    <input type="radio" name="education" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Среднее</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="education" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Среднее специальное</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="education" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Неполное Высшее</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="education" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Высшее</span>
+                </label>
+                <h5>Опыт работы</h5>
+                <label class="radio_select">
+                    <input type="radio" name="experience" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Нет опыта</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="experience" class="redio_select">
+                    <span class="fake"></span>
+                    <span>От 1 до 3 лет</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="experience" class="redio_select">
+                    <span class="fake"></span>
+                    <span>От 3 до 6 лет</span>
+                </label>
+                <label class="radio_select">
+                    <input type="radio" name="experience" class="redio_select">
+                    <span class="fake"></span>
+                    <span>Более 6 лет</span>
+                </label>
+                <h5>Спецализация</h5>
+                <input type="text" name="specialization" id="specialization" placeholder="Выберите спецализацию">
+                <h5>Спецализация</h5>
+                <label class="select_bolean">
+                    <input type="checkbox" name="remote" class="checkbox_bolean">
+                    <span class="check_bolean"></span>
+                    <span>Only Remote</span>
+                </label>
+            </div>
+            <div id="jobs_block" class="jobs_block">
+                
+                <div id="search" class="search">
+                    <img src="./img/search.png" alt="search">
+                    <input type="text" name="search" id="input_search" placeholder="Start searching...">
+                    <div id="sort" class="sort">Sort by:</div>
+                </div>
+                <div id="jobs_list" class="jobs_list">
+                    <div id="job_info" class="job_info">
+                        <div id="name_company" class="name_company">
+                            <img src="./img/Avatar.png" alt="Avatar">
+                            <div id="name_com" class="name_com">AgencyAnalytics</div>
+                            <div id="city" class="city">• Kiev</div>
+                            <div id="data_age" class="new">New</div>
+                        </div>
+                        <div id="name_job" class="name_job">
+                            <h2>Frontend Developer (Website)</h2>
+                        </div>
+                        <div id="description" class="description">
+                            <h3>Our remote company is seeking a passionate 
+                                person to become the lead developer on our website.
+                            </h3>
+                            <img src="./img/heart.png" alt="heart">
+                        </div>
+                    </div>
+                    <div id="job_info" class="job_info">
+                        <div id="name_company" class="name_company">
+                            <img src="./img/avatar_comp_1.png" alt="Avatar">
+                            <div id="name_com" class="name_com">Clevertech</div>
+                            <div id="city" class="city">• Medelin</div>
+                            <div id="data_age" class="data_age">1 d</div>
+                        </div>
+                        <div id="name_job" class="name_job">
+                            <h2>Senior Staff React Developer</h2>
+                        </div>
+                        <div id="description" class="description">
+                            <h3>Clevertech is a leading consultancy that 
+                                operates fully remote. We build 
+                                transformational digital solutions for the 
+                                world’s most innovative organizations.
+                            </h3>
+                            <img src="./img/heart.png" alt="heart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="right_sidebar" class="right_sidebar">
+                <h5>Top Companies</h5>
+                <div id="top_company_list" class="top_company_list">
+                    <div id="name_short_company" class="name_short_company">
+                        <img src="./img/avatar_comp_1.png" alt="logo">
+                        <h4>Clevertech</h4>
+                    </div>
+                    <div id="name_short_company" class="name_short_company">
+                        <img src="./img/Avatar.png" alt="logo">
+                        <h4>AgencyAnalytic</h4>
+                    </div>
+                </div>
+                <div id="email_mailing" class="email_mailing">
+                    <h2>Want keep up-to-date?</h2>
+                    <h3>Get a daily email of all new jobs</h3>
+                    <input type="email" name="mailing" id="mailing" placeholder="Enter you email">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h6>© 2021 krytet</h6>
+
+        </footer>
+    </body>
+</html>

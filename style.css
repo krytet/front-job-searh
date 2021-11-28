@@ -1,0 +1,342 @@
+body{
+    margin: 0px;
+    background-color: #F3F4F6;
+    font-size: 14px;
+    font-family: 'Helvetica', 'Neue';
+    color: #18181B;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    height: 37px;
+    padding: 17.5px 100px;
+    align-items: center;
+}
+.top input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    margin-left: 15px;
+}
+.top input::placeholder{
+    color: #A1A1AA;
+}
+.top a {
+    color: #71717A;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Helvetica', 'Neue';
+    margin-left: 25px;
+}
+.top button{
+    background-color: #7C3AED;
+    color: #F3F4F6;
+    border: none;
+    border-radius: 3px;
+    height: 37px;
+    width: 98px;
+    padding: 0;
+    margin-left: 27.5px;
+}
+input:focus{
+    outline: none;
+}
+h5 {
+    margin: 0px;
+}
+
+.logo {
+    background-image: url("./img/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 330px;
+
+}
+.slogan {
+    margin: auto;
+    color: #FFFFFF;
+}
+.slogan h1 {
+    font-size: 48px;
+    max-width: 584px;
+}
+.slogan h5 {
+    max-width: 410px;
+    font-size: 16px;
+    margin: auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-column-gap: 3%;
+    padding-top: 32px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.left_sidebar h5 {
+    color: #18181B;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.radio_select {
+    display: grid;
+    grid-template-columns: 16px auto;
+    grid-column-gap: 8px;
+    text-align: left;
+    color: #71717A;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.radio_select input {
+    display: none;
+}
+
+.fake {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #A1A1AA;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+}
+.fake:hover {
+    border: 1px solid #5c5c5c;
+    transition: 0.2s;
+}
+.fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    border: 6px solid #7C3AED;
+    transition: 0.5s;
+    opacity: 0;
+}
+.redio_select:checked + .fake::before {
+    opacity: 1;
+}
+
+.left_sidebar input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #D4D4D8;
+    padding-left: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.left_sidebar input::placeholder {
+    color: #71717A;
+}
+
+.select_bolean  {
+    display: inline;
+}
+.checkbox_bolean {
+    display: none;
+}
+.check_bolean {
+    display: inline-block;
+    height: 16px;
+    width: 28px;
+    border-radius: 8px;
+    background-color: #7C3AED;
+    transition: 1s;
+}
+.check_bolean::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #E4E4E7;
+    left: 0%;
+    opacity: 1;
+    transition: 1s;
+}
+.checkbox_bolean:checked + .check_bolean::before {
+    background-color: #7C3AED;
+    left: 12px;
+}
+.checkbox_bolean:checked + .check_bolean {
+    background-color: #E4E4E7;
+}
+
+
+
+.jobs_block {
+    background-color: white;
+    border: 2px solid #E4E4E7;
+    border-radius: 4px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    border-bottom: 2px solid #E4E4E7;
+}
+.search input {
+    flex-grow: 1;
+    color:  #71717A;
+    border: none;
+    margin-left: 16px;
+}
+input::placeholder {
+    color: #D4D4D8; 
+}
+.sort {
+    color: #71717A;
+}
+
+.job_info {
+    min-height: 100px;
+    margin: 25px 24px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E4E4E7;
+}
+
+.name_company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name_company img {
+    height: 32px;
+    width: 32px;
+}
+.name_com {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.city {
+    flex-grow: 1;
+    color: #A1A1AA;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.data_age {
+    color: #A1A1AA;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.new {
+    color: #6D28D9;
+}
+
+.name_job h2 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+
+}
+.description h3 {
+    color: #71717A;
+    font-size: 14px;
+    flex-grow: 1;
+    
+    margin: 0px;
+}
+.description img {
+    height: 16px;
+    width: 16px;
+    margin-left: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right_sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 256px;
+}
+.right_sidebar h5 {
+    font-size: 16px;
+}
+
+.name_short_company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+}
+.name_short_company img {
+    height: 16px;
+    width: 16px;
+    margin-bottom: auto;
+}
+.name_short_company h4 {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 9px;
+    margin-bottom: 9px;
+
+}
+
+.email_mailing {
+    background-image: url("./img/Email.png");
+    border-radius: 8px;
+    height: 365px;
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    vertical-align: middle;
+    color: white;
+    margin-top: 16px;
+}
+.email_mailing h2 {
+    font-size: 24px;
+    margin-top: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 0px;
+    width: 150px;
+}
+.email_mailing h3 {
+    font-size: 12px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    width: 190px;
+}
+.email_mailing input {
+    border-radius: 4px;
+    border: 1px solid #D4D4D8;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 40px;
+    padding-left: 12px;
+    margin-bottom: auto;
+}
+
+footer{
+    text-align: center;
+    background-color: #8B5CF6;
+    margin-top: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+footer h6 {
+    margin-bottom: 0px;
+}
