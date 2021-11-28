@@ -146,6 +146,14 @@ h5 {
 .select_bolean  {
     display: inline;
 }
+
+.select_bolean .text {
+    position:absolute;
+    padding-left: 12px;
+    color: #71717A;
+    vertical-align: middle;
+}
+
 .checkbox_bolean {
     display: none;
 }
@@ -176,6 +184,7 @@ h5 {
 .checkbox_bolean:checked + .check_bolean {
     background-color: #E4E4E7;
 }
+
 
 
 
