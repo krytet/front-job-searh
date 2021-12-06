@@ -5,6 +5,8 @@ body{
     font-family: 'Helvetica', 'Neue';
     color: #18181B;
 }
+
+/*Настройка шапки сайта*/
 header{
     display: flex;
     flex-direction: column;
@@ -49,14 +51,14 @@ h5 {
     margin: 0px;
 }
 
+/*Настройка логотипа блока*/
 .logo {
-    background-image: url("./img/background.png");
+    background-image: url("../img/background.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 330px;
-
 }
 .slogan {
     margin: auto;
@@ -71,6 +73,7 @@ h5 {
     font-size: 16px;
     margin: auto;
 }
+/*Нстройка основной информации*/
 .content{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr ;
@@ -79,7 +82,7 @@ h5 {
     padding-left: 100px;
     padding-right: 100px;
 }
-
+/*Настрока левого бара*/
 .left_sidebar h5 {
     color: #18181B;
     font-size: 16px;
@@ -187,7 +190,7 @@ h5 {
 
 
 
-
+/*Настройка блока вакансий*/ 
 .jobs_block {
     background-color: white;
     border: 2px solid #E4E4E7;
@@ -274,6 +277,7 @@ input::placeholder {
     margin-bottom: auto;
 }
 
+/*Настройка правого бара*/
 .right_sidebar {
     display: flex;
     flex-direction: column;
@@ -303,7 +307,7 @@ input::placeholder {
 }
 
 .email_mailing {
-    background-image: url("./img/Email.png");
+    background-image: url("../img/Email.png");
     border-radius: 8px;
     height: 365px;
     width: 256px;
@@ -339,6 +343,7 @@ input::placeholder {
     margin-bottom: auto;
 }
 
+/*Настройка футтера*/
 footer{
     text-align: center;
     background-color: #8B5CF6;
@@ -349,3 +354,107 @@ footer{
 footer h6 {
     margin-bottom: 0px;
 }
+
+
+/* 
+            для index.html
+*/
+
+
+
+
+
+
+/*
+            для detail
+*/
+.content-detail-jobs {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-column-gap: 30px;
+    align-items: center;
+    align-self:center;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 15px; 
+    margin-top: 30px; 
+
+}
+
+/* Блок вывода информации о вакансии */
+.view-detail-vacancy {
+    grid-area: 'left';
+    width: 700px;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px dotted #939;
+
+    background-color: white;
+    border: 2px solid #E4E4E7;
+    border-radius: 10px;
+}
+
+.view-detail-vacancy h1, h2, h3 {
+    text-align: center;
+}
+
+.view-detail-vacancy h2 {
+    color: #71717a7c;
+}
+
+.view-detail-vacancy .list-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-skills span {
+    background-color: rgb(202, 138, 218);
+    border: 1px solid #E4E4E7;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Блок вывода информации о комании */
+.company-info-and-skills {
+    width: 300px;
+    color: #18181B;
+    font-size: 16px;
+    margin-bottom: 12px;
+    align-items: center;
+    align-self:center;
+    align-content: center;
+    text-align: center;
+}
+
+.response-vacancy {
+    background-color: rgb(202, 138, 218);
+    border: 1px solid #E4E4E7;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+
+}
+.response-vacancy:hover { 
+    text-decoration: none;
+    color: #F3F4F6;
+    transition: 0.5s;
+}
+
+.requirements-list-for-job {
+    font-size: 14px;
+    color: #71717a;
+}
+
+.requirements-list-for-job span {
+    color: black;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
