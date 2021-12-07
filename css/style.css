@@ -76,11 +76,11 @@ h5 {
 /*Нстройка основной информации*/
 .content{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-columns: 200px 700px 256px ;
     grid-column-gap: 3%;
     padding-top: 32px;
-    padding-left: 100px;
-    padding-right: 100px;
+    justify-content: center;
+    justify-self:center;
 }
 /*Настрока левого бара*/
 .left_sidebar h5 {
@@ -397,7 +397,15 @@ footer h6 {
     border-radius: 10px;
 }
 
-.view-detail-vacancy h1, h2, h3 {
+.view-detail-vacancy h1 {
+    text-align: center;
+}
+
+.view-detail-vacancy h2 {
+    text-align: center;
+}
+
+.view-detail-vacancy h3 {
     text-align: center;
 }
 
