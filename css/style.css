@@ -11,6 +11,7 @@ header{
     display: flex;
     flex-direction: column;
 }
+
 .top{
     display: flex;
     flex-direction: row;
@@ -18,15 +19,18 @@ header{
     padding: 17.5px 100px;
     align-items: center;
 }
+
 .top input {
     flex-grow: 1;
     background: none;
     border: none;
     margin-left: 15px;
 }
+
 .top input::placeholder{
     color: #A1A1AA;
 }
+
 .top a {
     color: #71717A;
     text-decoration: none;
@@ -34,6 +38,7 @@ header{
     font-family: 'Helvetica', 'Neue';
     margin-left: 25px;
 }
+
 .top button{
     background-color: #7C3AED;
     color: #F3F4F6;
@@ -44,9 +49,11 @@ header{
     padding: 0;
     margin-left: 27.5px;
 }
+
 input:focus{
     outline: none;
 }
+
 h5 {
     margin: 0px;
 }
@@ -60,19 +67,23 @@ h5 {
     text-align: center;
     height: 330px;
 }
+
 .slogan {
     margin: auto;
     color: #FFFFFF;
 }
+
 .slogan h1 {
     font-size: 48px;
     max-width: 584px;
 }
+
 .slogan h5 {
     max-width: 410px;
     font-size: 16px;
     margin: auto;
 }
+
 /*Нстройка основной информации*/
 .content{
     display: grid;
@@ -82,6 +93,7 @@ h5 {
     justify-content: center;
     justify-self:center;
 }
+
 /*Настрока левого бара*/
 .left_sidebar h5 {
     color: #18181B;
@@ -111,10 +123,12 @@ h5 {
     transition: 1s;
     position: relative;
 }
+
 .fake:hover {
     border: 1px solid #5c5c5c;
     transition: 0.2s;
 }
+
 .fake::before {
     content: "";
     position: absolute;
@@ -129,6 +143,7 @@ h5 {
     transition: 0.5s;
     opacity: 0;
 }
+
 .redio_select:checked + .fake::before {
     opacity: 1;
 }
@@ -142,6 +157,7 @@ h5 {
     font-size: 14px;
     margin-bottom: 20px;
 }
+
 .left_sidebar input::placeholder {
     color: #71717A;
 }
@@ -160,6 +176,7 @@ h5 {
 .checkbox_bolean {
     display: none;
 }
+
 .check_bolean {
     display: inline-block;
     height: 16px;
@@ -168,6 +185,7 @@ h5 {
     background-color: #7C3AED;
     transition: 1s;
 }
+
 .check_bolean::before {
     content: "";
     display: block;
@@ -180,10 +198,12 @@ h5 {
     opacity: 1;
     transition: 1s;
 }
+
 .checkbox_bolean:checked + .check_bolean::before {
     background-color: #7C3AED;
     left: 12px;
 }
+
 .checkbox_bolean:checked + .check_bolean {
     background-color: #E4E4E7;
 }
@@ -196,21 +216,25 @@ h5 {
     border: 2px solid #E4E4E7;
     border-radius: 4px;
 }
+
 .search {
     display: flex;
     flex-direction: row;
     padding: 16px 20px;
     border-bottom: 2px solid #E4E4E7;
 }
+
 .search input {
     flex-grow: 1;
     color:  #71717A;
     border: none;
     margin-left: 16px;
 }
+
 input::placeholder {
     color: #D4D4D8; 
 }
+
 .sort {
     color: #71717A;
 }
@@ -228,25 +252,30 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
 }
+
 .name_company img {
     height: 32px;
     width: 32px;
 }
+
 .name_com {
     font-size: 14px;
     padding-left: 10px;
 }
+
 .city {
     flex-grow: 1;
     color: #A1A1AA;
     font-size: 12px;
     padding-left: 5px;
 }
+
 .data_age {
     color: #A1A1AA;
     font-size: 12px;
     padding-left: 5px;
 }
+
 .new {
     color: #6D28D9;
 }
@@ -262,6 +291,7 @@ input::placeholder {
     margin-bottom: 25px;
 
 }
+
 .description h3 {
     color: #71717A;
     font-size: 14px;
@@ -269,6 +299,7 @@ input::placeholder {
     
     margin: 0px;
 }
+
 .description img {
     height: 16px;
     width: 16px;
@@ -283,6 +314,7 @@ input::placeholder {
     flex-direction: column;
     min-width: 256px;
 }
+
 .right_sidebar h5 {
     font-size: 16px;
 }
@@ -293,11 +325,13 @@ input::placeholder {
     align-items: center;
     margin-top: 12px;
 }
+
 .name_short_company img {
     height: 16px;
     width: 16px;
     margin-bottom: auto;
 }
+
 .name_short_company h4 {
     font-size: 12px;
     margin-top: 0px;
@@ -318,6 +352,7 @@ input::placeholder {
     color: white;
     margin-top: 16px;
 }
+
 .email_mailing h2 {
     font-size: 24px;
     margin-top: auto;
@@ -326,6 +361,7 @@ input::placeholder {
     margin-bottom: 0px;
     width: 150px;
 }
+
 .email_mailing h3 {
     font-size: 12px;
     margin-left: 24px;
@@ -333,6 +369,7 @@ input::placeholder {
     margin-bottom: 16px;
     width: 190px;
 }
+
 .email_mailing input {
     border-radius: 4px;
     border: 1px solid #D4D4D8;
@@ -418,6 +455,7 @@ footer h6 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .list-skills span {
     background-color: rgb(202, 138, 218);
     border: 1px solid #E4E4E7;
